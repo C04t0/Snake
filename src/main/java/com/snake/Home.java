@@ -11,20 +11,17 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class Home extends Application {
-
+    Controller controller = new Controller();
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Home.class.getResource("Snake.fxml"));
 
         TitledPane root = fxmlLoader.load();
 
-
         Scene scene = new Scene(root, 800, 800);
         stage.setScene(scene);
         stage.show();
-
     }
-
 
     public static void main(String[] args) {
         launch();
