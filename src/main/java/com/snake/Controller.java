@@ -64,11 +64,11 @@ public class Controller {
     }
     @FXML
     void moveSquareKeyPressed(KeyEvent event) {
-        if(event.getCode().equals(KeyCode.W) && direction != TextInputControlSkin.Direction.DOWN){
+        if(event.getCode().equals(KeyCode.Z) && direction != TextInputControlSkin.Direction.DOWN){
             direction = TextInputControlSkin.Direction.UP;
         } else if(event.getCode().equals(KeyCode.S) && direction != TextInputControlSkin.Direction.UP){
             direction = TextInputControlSkin.Direction.DOWN;
-        }else if(event.getCode().equals(KeyCode.A) && direction != TextInputControlSkin.Direction.RIGHT){
+        }else if(event.getCode().equals(KeyCode.Q) && direction != TextInputControlSkin.Direction.RIGHT){
             direction = TextInputControlSkin.Direction.LEFT;
         }else if(event.getCode().equals(KeyCode.D) && direction != TextInputControlSkin.Direction.LEFT){
             direction = TextInputControlSkin.Direction.RIGHT;
